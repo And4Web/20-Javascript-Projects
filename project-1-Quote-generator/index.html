@@ -10,7 +10,28 @@
   <title>Quote Generator</title>
 </head>
 <body>
-  <h1 id="hello"><i class="fa-solid fa-horse-head"></i>Hello</h1>
+  <div class="quote-container" id="quote-container">
+    <!-- Quote text -->
+    <div class="quote-text">
+      <i class="fas fa-quote-left"></i>
+      <span id="quote"></span>
+    </div>
+    <!-- Author -->
+    <div class="quote-author">
+      <span id="author"></span>
+    </div>
+    <!-- Buttons -->
+    <div class="button-container">
+      <button class="button-twitter" id="twitter" title="Tweet this!">
+        <i class="fab fa-twitter"></i>
+      </button>
+      <button class="button-next-quote" id="next-quote">
+        Next Quote
+      </button>
+    </div>
+
+  </div>
+  <div class="loader" id="loader"></div>
   <!-- script -->
   <script src="script.js"></script>
 </body>

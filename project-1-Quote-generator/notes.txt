@@ -1,1 +1,7 @@
 -> heropatterns.com
+
+-> forismatic.com/en/api (not working)
+
+-> https://type.fit/api/quotes (working)
+
+-> https://twitter.com/intent/tweet
