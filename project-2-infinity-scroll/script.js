@@ -44,10 +44,20 @@ async function getPhotos() {
     const response = await fetch(api_url);
     photosArray = await response.json();
     displayPhotos();
-    console.log(photosArray);
+    // console.log(photosArray);
   } catch (error) {
     console.log("Error: ", error);
   }
 }
+
+window.addEventListener("scroll", () => {
+  if (
+    window.innerHeight + window.scrollY >=
+    document.body.offsetHeight - 1000
+  ) {
+    getPhotos();
+    // console.log("load more");
+  }
+});
 
 getPhotos();
