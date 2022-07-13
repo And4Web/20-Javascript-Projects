@@ -3,13 +3,30 @@ const loader = document.getElementById("loader");
 
 let photosArray = [];
 
+let ready = false;
+let imagesLoaded = 0;
+let totalImages = 0;
+
 function setAttributes(element, attributes) {
   for (const key in attributes) {
     element.setAttribute(key, attributes[key]);
   }
 }
 
+function imageLoaded() {
+  imagesLoaded++;
+  console.log(imagesLoaded);
+  if (imagesLoaded === totalImages) {
+    ready = true;
+    loader.hidden = true;
+    console.log("ready: ", ready);
+  }
+}
+
 function displayPhotos() {
+  imagesLoaded = 0;
+  totalImages = photosArray.length;
+  console.log("total images: ", totalImages);
   photosArray.forEach((photo) => {
     const item = document.createElement("a");
     const img = document.createElement("img");
@@ -30,6 +47,8 @@ function displayPhotos() {
       title: photo.alt_description,
     });
 
+    img.addEventListener("load", imageLoaded);
+
     imageContainer.appendChild(item);
     item.appendChild(img);
   });
@@ -44,7 +63,7 @@ async function getPhotos() {
     const response = await fetch(api_url);
     photosArray = await response.json();
     displayPhotos();
-    // console.log(photosArray);
+    console.log(photosArray);
   } catch (error) {
     console.log("Error: ", error);
   }
@@ -52,11 +71,12 @@ async function getPhotos() {
 
 window.addEventListener("scroll", () => {
   if (
-    window.innerHeight + window.scrollY >=
-    document.body.offsetHeight - 1000
+    window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000 &&
+    ready
   ) {
+    ready = false;
     getPhotos();
-    // console.log("load more");
+    console.log("load more");
   }
 });
 
