@@ -1,0 +1,5 @@
+important concept covered:
+(1) random jokes api - 
+(2) text to speech api - 
+(3) HTML audio element
+(4) 
