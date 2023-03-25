@@ -1,5 +1,5 @@
 important concept covered:
 (1) random jokes api - 
-(2) text to speech api - 
+(2) text to speech api - voiceRSS api: searched and found on rapidAPI website.
 (3) HTML audio element
 (4) 
