@@ -1,0 +1,30 @@
+{
+  "name": "ztm-js-20-projects",
+  "version": "1.0.0",
+  "description": "server for 20 vanilla javascript projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/And4Web/20-Javascript-Projects.git"
+  },
+  "keywords": [
+    "Node.js",
+    "express.js"
+  ],
+  "author": "Anand Shukla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/And4Web/20-Javascript-Projects/issues"
+  },
+  "homepage": "https://github.com/And4Web/20-Javascript-Projects#readme",
+  "dependencies": {
+    "express.js": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
