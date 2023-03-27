@@ -1,0 +1,6 @@
+(1) learn how to chose and set colors in your dark/light mode projects:
+https://blog.prototypr.io/how-to-design-a-dark-theme-for-your-android-app-3daeb264637
+
+(2) for background patterns: heropatterns.com
+
+(3) 
