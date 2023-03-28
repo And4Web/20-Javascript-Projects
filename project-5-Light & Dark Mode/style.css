@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Kaushan+Script&family=Oswald&display=swap');
+
 :root {
   --primary-color: rgb(255, 92, 92);
   --primary-variant: #ff2d2d;
@@ -25,6 +27,7 @@ html {
 }
 
 body {
+  font-family: 'Comfortaa', cursive, sans-serif;
   margin: 0;
   color: var(--on-background);
   background-color: var(--background);
@@ -37,21 +40,25 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
 }
 
 h1 {
   font-size: 100px;
   margin-bottom: 0;
+  font-family: 'Kaushan Script', cursive, sans-serif;
+
 }
 
 h2 {
+  color: var(--on-background-alt);
   font-size: 32px;
   font-weight: normal;
 }
 
 /* Navigation */
 nav {
+  font-family: 'Oswald', sans-serif;
   z-index: 10;
   position: fixed;
   font-size: 24px;
