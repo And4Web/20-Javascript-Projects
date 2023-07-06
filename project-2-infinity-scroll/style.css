@@ -39,8 +39,7 @@ body{
 /* image container */
 .image-container{
   text-align: center;  
-  margin: 10px 20%;
-  /* background-color: blueviolet; */
+  margin: 10px 20%; 
 }
 .image-container img{
   width: 100%;

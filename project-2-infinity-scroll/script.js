@@ -15,11 +15,11 @@ function setAttributes(element, attributes) {
 
 function imageLoaded() {
   imagesLoaded++;
-  console.log(imagesLoaded);
+  // console.log(imagesLoaded);
   if (imagesLoaded === totalImages) {
     ready = true;
     loader.hidden = true;
-    console.log("ready: ", ready);
+    // console.log("ready: ", ready);
     count = 30;
   }
 }
@@ -27,7 +27,7 @@ function imageLoaded() {
 function displayPhotos() {
   imagesLoaded = 0;
   totalImages = photosArray.length;
-  console.log("total images: ", totalImages);
+  // console.log("total images: ", totalImages);
   photosArray.forEach((photo) => {
     const item = document.createElement("a");
     const img = document.createElement("img");
@@ -64,7 +64,7 @@ async function getPhotos() {
     const response = await fetch(api_url);
     photosArray = await response.json();
     displayPhotos();
-    console.log(photosArray);
+    // console.log(photosArray);
   } catch (error) {
     console.log("Error: ", error);
   }
@@ -77,7 +77,7 @@ window.addEventListener("scroll", () => {
   ) {
     ready = false;
     getPhotos();
-    console.log("load more");
+    // console.log("load more");
   }
 });
 

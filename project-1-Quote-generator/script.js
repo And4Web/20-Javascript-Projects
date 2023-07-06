@@ -28,17 +28,18 @@ async function getQuote() {
     const data = await response.json();
     let randomIndex = Math.floor(Math.random() * 1600);
     quoteText.innerText = data[randomIndex].text;
+    // if author field is empty, add 'Anonymous':
     if (data[randomIndex].author === null) {
-      quoteAuthor.innerText = "- " + "Unknown";
+      quoteAuthor.innerText = "- " + "Anonymous";
     } else {
       quoteAuthor.innerText = "- " + data[randomIndex].author;
     }
+    // if quote length is larger reduce the font size:
     if (data[randomIndex].text.length > 100) {
       quoteText.classList.add("long-quote");
     } else {
       quoteText.classList.remove("long-quote");
     }
-    console.log(data[randomIndex].text.length);
     removeLoadingSpinner();
   } catch (error) {
     console.log("Error: ", error);
@@ -48,7 +49,7 @@ async function getQuote() {
 function twitterPost() {
   const quote = quoteText.innerText;
   const author = quoteAuthor.innerText;
-  const tweetPostUrl = `https://twitter.com/intent/tweet?text=${quote}${author}`;
+  const tweetPostUrl = `https://twitter.com/intent/tweet?text=${quote} - ${author}`;
 
   window.open(tweetPostUrl, "_blank");
 }
