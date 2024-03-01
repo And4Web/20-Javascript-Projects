@@ -7,4 +7,8 @@ https://blog.prototypr.io/how-to-design-a-dark-theme-for-your-android-app-3daeb2
 
 (4) toggle switch: https://www.w3schools.com/howto/howto_css_switch.asp
 
-(5) 
+(5) querySelector('input[type="checkbox"]') syntax to target specific type of element. change event is emitted to call a function on change of that element.
+
+(6) document.documentElement returns the root element of the document. i.e. HTML for HTML documents.
+
+(7) save theme using window.localStorage()
