@@ -202,7 +202,7 @@ p {
   top: 1.8rem;
 }
 
-.theme-switch-wrapper span {
+.theme-switch-wrapper span  {
   margin-right: .8rem;
   font-size: 1rem;
 }
@@ -219,10 +219,12 @@ p {
   height: 2rem;
   position: relative;
   width: 3.8rem;
+  /* border: 2px solid blue; */
 }
 
 .theme-switch input {
   display: none;
+  /* border: 1px solid green; */
 }
 
 .slider {
@@ -234,10 +236,12 @@ p {
   right: 0;
   top: 0;
   transition: 0.4s;
+  /* border: 2px solid black; */
 }
 
 .slider::before {
   background: #fff;
+  /* background: red; */
   bottom: 4px;
   content: "";
   height: 1.5rem;
@@ -252,7 +256,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider::before {
-  transform: translateX(26px);
+  transform: translateX(1.8rem);
 }
 
 .slider.round {
