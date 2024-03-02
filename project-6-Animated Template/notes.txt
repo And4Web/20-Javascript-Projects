@@ -4,4 +4,8 @@
 
 (3) unsplash.com
 
-(4) 
+(4) animate on scroll library: https://michalsnik.github.io/aos/
+
+(5) Load third party scripts efficiently: https://web.dev/articles/optimizing-content-efficiency-loading-third-party-javascript
+
+(6) 
