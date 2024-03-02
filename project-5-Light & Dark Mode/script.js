@@ -13,29 +13,22 @@ function imageMode(color){
   image3.src = `img/undraw_conceptual_idea_${color}.svg`
 }
 // nav and textbox toggleIcon styles
-function navTextBoxToggleIcon(value){
-  if(value==="dark"){
-    nav.style.backgroundColor = 'rgb(0 0 0 / 50%)';
-    textBox.style.backgroundColor = 'rgb(255 255 255 / 50%)';
-    toggleIcon.children[0].textContent = "Dark Mode";
-    toggleIcon.children[1].classList.replace("fa-sun", "fa-moon");
-  }else{
-    nav.style.backgroundColor = 'rgb(255 255 255 / 50%)';
-    textBox.style.backgroundColor = 'rgb(0 0 0 / 50%)';
-    toggleIcon.children[0].textContent = "Light Mode";
-    toggleIcon.children[1].classList.replace("fa-moon", "fa-sun");
-  }
+function navTextBoxToggleIcon(isDark){
+    nav.style.backgroundColor = isDark ? 'rgb(0 0 0 / 50%)' : 'rgb(255 255 255 / 50%)';
+    textBox.style.backgroundColor = isDark ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 50%)';
+    toggleIcon.children[0].textContent = isDark ? "Dark Mode" : "Light Mode";
+    isDark ? toggleIcon.children[1].classList.replace("fa-sun", "fa-moon") : toggleIcon.children[1].classList.replace("fa-moon", "fa-sun");; 
 }
 
 // dark mode styles
 function darkMode(){
-  navTextBoxToggleIcon("dark")  
+  navTextBoxToggleIcon(true)  
   imageMode("dark")
 }
 
 // light mode styles
 function lightMode(){
-  navTextBoxToggleIcon("light")  
+  navTextBoxToggleIcon(false)  
   imageMode("light")
 }
 
