@@ -1,0 +1,5 @@
+https://www.w3schools.com/tags/ref_av_dom.asp
+
+html audio/video elements
+
+textContent vs innerText
