@@ -1,0 +1,22 @@
+for free videos - https://pixabay.com/videos/
+
+compress videos - youcompress.com
+
+forms read accessibility from mdn docs - 
+
+https://www.w3.org/WAI/fundamentals/accessibility-intro/
+
+input:type=data - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date
+
+js Date Object - https://www.w3schools.com/js/js_dates.asp
+
+date.toISOString()
+
+HTMLFormElement: Submit event - https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event
+
+JS timing events - https://www.w3schools.com/js/js_timing.asp
+
+JSON.stringify()
+
+JSON.parse()
+
