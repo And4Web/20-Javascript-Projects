@@ -1,0 +1,24 @@
+conditional (ternary) operator
+
+HTML Form Element: submit event - https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event
+
+event.preventDefault()
+
+Regular Expressions - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions
+
+regexr.com
+
+local storage - https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+
+JSON.stringify() & JSON.parse()
+
+DOM manipulation - create elements, set attributes, change CSS styles by adding or removing classes, append elements in the DOM tree.
+
+
+remove an element from array: Array.splice() - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+
+
+
+
+
+
