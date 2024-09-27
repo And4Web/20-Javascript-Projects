@@ -1,0 +1,20 @@
+svg background patterns - heropatterns.com
+
+free videos - pixabay.com
+
+html video element 
+
+video element - playsinline 
+
+fontawesome icons
+
+css calc() - https://developer.mozilla.org/en-US/docs/Web/CSS/calc
+
+video html element - https://www.w3schools.com/tags/ref_av_dom.asp
+
+HTML element: change event - https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event
+
+How to - fullscreen - https://www.w3schools.com/howto/howto_js_fullscreen.asp
+
+window.navigator.userAgent - information about user device : Learn navigator but don't use userAgent, it may be error prone.
+
