@@ -1,0 +1,14 @@
+HTML forms - https://www.w3schools.com/html/html_forms.asp
+
+css pseudo class - valid - https://developer.mozilla.org/en-US/docs/Web/CSS/:valid
+
+Client side form validation - https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
+
+Constraint validation - https://developer.mozilla.org/en-US/docs/Web/HTML/Constraint_validation
+
+Validation with Regular expressions - https://html.com/attributes/input-pattern/
+
+Password pattern Regex - https://regexr.com/3bfsi
+
+HTML form element: Submit event - https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event
+
