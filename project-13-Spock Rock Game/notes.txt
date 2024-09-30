@@ -1,0 +1,10 @@
+Javascript switch statement - https://www.w3schools.com/js/js_switch.asp
+
+css script confetti - https://www.cssscript.com/tag/confetti/
+
+Javascript modules - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+
+js modules are self contained, they don't create global variables or functions.
+
+Javascript modules - Dynamic imports.
+
