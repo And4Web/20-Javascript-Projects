@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA API Pictures</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov">
+    <!-- ZTM Favicon -->
+    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+</head>
+<body>
+    <!-- Loader -->
+     <div class="loader hidden">
+        <img src="./rocket-my.svg" alt="Rocket Loading animation">
+     </div>
+
+     <!-- Container -->
+      <div class="container">
+        <!-- Navigation -->
+         <div class="navigation-container">
+            <span class="background"></span>
+            <!-- Results Nav -->
+             <span class="navigation-items" id="resultsNav">
+                <h3 class="clickable" onclick="updateDOM('favorites')">Favorites</h3>
+                <h3>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</h3>
+                <h3 class="clickable" onclick="getNASAPictures()">Load More</h3>
+             </span>
+
+             <!-- Favorites Nav -->
+              <span class="navigation-items hidden" id="favoritesNav">
+                <h3 class="clickable" onclick="getNASAPictures()">Load more NASA images</h3>
+              </span>
+         </div>
+
+         <!-- Images Container -->
+          <div class="images-container">
+            <!-- <div class="card">
+               <a href="" title="View full image" target="_blank">
+                  <img class="card-image-top" src="https://apod.nasa.gov/apod/image/2409/CometA3_Korona_2040.jpg" alt="NASA picture of the day">
+               </a>
+               <div class="card-body">
+                  <h5 class="card-title">Title of Image</h5>
+                  <p class="clickable">Add to favorites</p>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, tempora laudantium. Voluptatum ad temporibus aliquam maiores culpa dignissimos, quam itaque corporis voluptate suscipit animi aut atque quasi maxime nesciunt labore veniam doloribus corrupti adipisci nulla soluta dolorum. Temporibus sed aliquid vero quam quibusdam eveniet repellat. Necessitatibus minima nulla totam doloribus!</p>
+                  <small class="text-muted">
+                     <strong>12-09-24</strong>
+                     <span>Copyright Info</span>
+                  </small>
+               </div>
+            </div> -->
+          </div>
+      </div>
+
+      <!-- Save Confirmation -->
+       <div class="save-confirmed" hidden>
+         <h1>Added!</h1>
+       </div>
+
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

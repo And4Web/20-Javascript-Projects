@@ -1,0 +1,14 @@
+Custom animation library: loaf - https://getloaf.io/
+
+NASA API - https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
+
+api.nasa.gov 
+
+Javascript string includes() - https://www.w3schools.com/jsref/jsref_includes.asp
+
+localStorage, JSON.stringify() and JSON.parse()
+
+Javascript delete operator - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete
+
+window.scrollTo() - https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo
+
