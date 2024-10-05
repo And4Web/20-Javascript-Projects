@@ -1,0 +1,12 @@
+Math.random() - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+
+How to shuffle elements in an array - Fisher Yates method: from stackoverflow - https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+
+geeksforgeeks - https://www.geeksforgeeks.org/how-to-shuffle-the-elements-of-an-array-in-javascript/
+
+HTML element scroll - https://developer.mozilla.org/en-US/docs/Web/API/Element/scroll
+
+Javascript timing events - https://www.w3schools.com/js/js_timing.asp
+
+JS Numbers: Number.toFixed() - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
+
