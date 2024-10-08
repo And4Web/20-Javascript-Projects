@@ -129,7 +129,7 @@ function showScorePage(){
 
 // Format and display Time in DOM
 function scoresToDOM(){
-  console.log("TEST: ", finalTime.toFixed(1), timePlayed, penaltyTime);
+ 
   finalTimeDisplay = finalTime.toFixed(1);
   baseTime = timePlayed.toFixed(1);
   penaltyTime = penaltyTime.toFixed(1);
@@ -152,7 +152,7 @@ function scoresToDOM(){
 
 // Stop Timer, Process Results, go to Score Page
 function checkTime(){
-  console.log(timePlayed, questionsAmount, playerGuessArray.length);
+  console.log("Time, #questions, PlayerGuessArray length: ", timePlayed, questionsAmount, playerGuessArray.length);
   if(playerGuessArray.length == questionsAmount){
     console.log('player guess array', playerGuessArray);
     console.log('clearInterval function: ', timer);
@@ -196,7 +196,7 @@ function startTimer(){
 function select(guessedTrue){
   
   // Scroll 80px 
-  valueY += 80;
+  valueY += 64;
   itemContainer.scroll(0, valueY);
   // Add player guess to array
   return guessedTrue ? playerGuessArray.push('true') : playerGuessArray.push('false');
@@ -220,8 +220,8 @@ function createEquations() {
   // Set amount of wrong equations
   const wrongEquations = questionsAmount - correctEquations;
 
-  console.log('Correct equations: ', correctEquations)
-  console.log('Wrong equations: ', wrongEquations)
+  // console.log('Correct equations: ', correctEquations)
+  // console.log('Wrong equations: ', wrongEquations)
 
   // Loop through, multiply random numbers up to 9, push to array
   for (let i = 0; i < correctEquations; i++) {
@@ -252,7 +252,7 @@ function createEquations() {
 
 // Add Equation to DOM
 function equationsToDOM(){
-  equationsArray.forEach((equation, index)=>{
+  equationsArray.forEach((equation)=>{
     // Item
     const item = document.createElement('div');
     item.classList.add('item');
@@ -262,8 +262,6 @@ function equationsToDOM(){
     // Append
     item.appendChild(equationText);
     itemContainer.appendChild(item);
-
-
   })
 }
 
@@ -338,7 +336,7 @@ function showCountdown(){
 // Get the value from selected radio button
 function getRadioValue(){
   let radioValue;
-  radioInputs.forEach((radioInput, index)=>{
+  radioInputs.forEach((radioInput)=>{
     if(radioInput.checked){
       radioValue = radioInput.value;
     }
@@ -350,14 +348,14 @@ function getRadioValue(){
 function selectQuestionsAmount(e){
   e.preventDefault();
   questionsAmount = getRadioValue();
-  console.log('Question Amount: ', questionsAmount);
+  //console.log('Question Amount: ', questionsAmount);
   if(questionsAmount){
     showCountdown();
   }
 }
 
 startForm.addEventListener('click', ()=>{
-  radioContainers.forEach((radioEl, index)=>{
+  radioContainers.forEach((radioEl)=>{
     // Remove Selected Label styling
     radioEl.classList.remove('selected-label');
     // Add it back if radio input is checked

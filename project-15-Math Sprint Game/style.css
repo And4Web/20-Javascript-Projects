@@ -27,35 +27,40 @@ body {
 .game-container {
   border: 1px solid black;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
-  /* width: 530px;
-  height: 750px; */
-  width: auto;
-  height: auto;
+  width: 530px;
+  height: 750px;
+  max-width: 430px;
+  max-height: 550px;
   position: relative;
   background: rgba(255, 255, 255, 0.5);
   user-select: none;
   margin: 100px auto;
-  padding: 1rem;
-
+  padding: .4rem;
+  
 }
 
 .header {
   background: var(--primary-color);
   color: white;
   font-family: Oxanium, sans-serif;
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-size: 1.2rem;
   text-shadow: 1px 2px 2px black;
   letter-spacing: 2px;
   height: 100px;
+  max-height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .card {
   margin: 5px auto 10px;
   height: 600px;
+  max-height: 450px;
+  /* border: 1px solid red; */
+  /* overflow: hidden; */
 }
 
 /* Splash Page -------------------- */
@@ -63,21 +68,25 @@ input[type="radio"] {
   opacity: 0;
   width: 100%;
   height: 75px;
+  max-height: 45px;
   position: relative;
   top: -40px;
   cursor: pointer;
   z-index: 2;
+  
 }
 
 .selection-container {
   position: relative;
-  top: 65px;
+  top: 0rem;
+  /* border: 1px solid green; */
+  margin: 2px;
 }
 
 .radio-container {
   width: 90%;
-  height: 75px;
-  margin: 25px;
+  height: 55px;
+  margin: 20px;
   cursor: pointer;
   border: 2px solid black;
   border-radius: 5px;
@@ -85,9 +94,9 @@ input[type="radio"] {
 
 label {
   position: relative;
-  top: 20px;
-  left: 20px;
-  font-size: 30px;
+  top: .8rem;
+  left: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .selected-label {
@@ -97,13 +106,13 @@ label {
 
 .best-score {
   position: relative;
-  top: -100px;
-  left: 330px;
+  top: -4.5rem;
+  left: 17rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-size: 18px;
+  font-size: .8rem;
   max-width: fit-content;
 }
 
@@ -112,26 +121,32 @@ label {
 }
 
 .best-score span:last-child {
-  font-size: 24px;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .selection-footer {
-  top: 134px;
+  top: 4.4rem;
 }
 
 /* Game Page -------------------------- */
 .height-240 {
   height: 240px;
+  /* max-height: 10.6rem; */
   width: 100%;
+  /* border: 1px solid red; */
 }
 
 .height-500 {
   height: 500px;
   width: 100%;
+  /* height: 2px solid green; */
 }
 
 .item-container {
+  /* border: 2px solid blue; */
   height: 552px;
+  max-height: 24rem;
   overflow-y: scroll;
   position: relative;
   -ms-overflow-style: none;
@@ -146,7 +161,9 @@ label {
   align-items: baseline;
   justify-content: space-between;
   height: 80px;
-  margin: 0 50px;
+  max-height: 4rem;
+  /* border: 1px solid black; */
+  margin: 0 3rem;
   user-select: none;
 }
 
@@ -157,18 +174,20 @@ label {
 .selected-item {
   background: var(--select-color);
   position: fixed;
-  top: 443px;
+  top: 443px;  
   z-index: -1;
-  /* width: 529px; */
-  width: 465px;
+  width: 529px;
+  max-width: 26rem;
   height: 80px;
+  max-height: 3.6rem;
+  /* border: 1px solid black; */
 }
 
 .item-footer,
 .selection-footer {
-  /* width: 100%;
-  height: 90px; */
-  height: 70px;
+  width: 100%;
+  height: 90px;
+  max-height: 70px;
   background: rgba(0, 0, 0, 1);
   display: flex;
   justify-content: center;
@@ -222,6 +241,9 @@ button:active {
 
 /* Countdown Page ---------------------- */
 .countdown {
+  /* border: 1px solid blueviolet; */
+  position: relative;
+  top: -20%;
   margin-top: 45%;
   font-size: 100px;
   text-align: center;
@@ -231,7 +253,9 @@ button:active {
 
 /* Score Page ------------------------- */
 .score-container {
+  /* border: 1px solid red; */
   height: 600px;
+  max-height: 28.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -244,21 +268,23 @@ button:active {
   display: flex;
   justify-content: center;
   position: relative;
-  top: -30px;
+  top: -3.8rem;
 }
 
 .title {
-  font-size: 45px;
+  font-size: 2.3rem;
+  
 }
 
 .final-time {
-  font-size: 100px;
+  font-size: 5rem;
   margin: 0;
   color: var(--success);
+  
 }
 
 .base-time {
-  margin-top: 100px;
+  margin-top: 3.5rem;
   margin-bottom: 0;
 }
 
@@ -283,6 +309,7 @@ button:active {
     width: 100%;
     margin-top: 0;
     border: none;
+    
   }
 
   .selected-item {
@@ -298,31 +325,45 @@ button:active {
   }
 
   .selection-container {
-    top: 100px;
+    top: 1rem;
+    
   }
 
   .radio-container {
     width: 93%;
+    height: 4rem;
     margin: 15px;
+    
   }
 
   label {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 
   .best-score {
     font-size: 1rem;
-    left: 245px;
+    left: 15rem;
   }
 
   .selection-footer {
-    top: 183px;
+    top: 4rem;
   }
 }
 
 /* Media Query: iPhone */
 @media screen and (max-width: 376px) {
+  .header {
+    font-size: 1rem;
+  }
+
+  .radio-container {
+    height: 3.5rem;
+    margin: 15px;    
+  }  
   .best-score {
-    left: 232px;
+    left: 13.5rem;
+  }
+  label {
+    font-size: 1.4rem;
   }
 }
