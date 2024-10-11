@@ -26,6 +26,7 @@ async function getQuote() {
   try {
     const response = await fetch(apiUrl);
     const data = await response.json();
+    //console.log('data >>> ', data)
     let randomIndex = Math.floor(Math.random() * 1600);
     quoteText.innerText = data[randomIndex].text;
     // if author field is empty, add 'Anonymous':

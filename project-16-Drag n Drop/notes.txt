@@ -1,0 +1,23 @@
+1. Current state of styling scrollbars - csstricks - https://css-tricks.com/the-current-state-of-styling-scrollbars-in-css/#:~:text=Your%20best%20bet%20for%20styling,(for%20Firefox%20for%20now).
+
+2. HTML Drag and Drop API - 
+
+https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API
+
+https://www.w3schools.com/html/html5_draganddrop.asp
+
+3. HTML ondragenter event attribute - https://www.w3schools.com/tags/ev_ondragenter.asp
+
+4. Array push()
+
+5. HTML Editable content: contenteditable - https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contenteditable
+
+6. Element - focusout event - https://developer.mozilla.org/en-US/docs/Web/API/Element/focusout_event
+
+7. Array.filter() - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+
+8. Array.map()
+
+9. Array.from()
+
+10. 

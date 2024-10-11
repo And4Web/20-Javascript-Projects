@@ -1,3 +1,7 @@
 -> box-shadow: inset horizontal vertical blur spread color
 
 -> https://css-tricks.com/an-introduction-to-the-picture-in-picture-web-api/
+
+-> window navigator mediaDevices
+
+-> video element srcObject and requestPictureInPicure()

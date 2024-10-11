@@ -1,0 +1,16 @@
+.project-menu{
+  list-style-type: decimal;
+}
+.project-item{
+  padding: .3rem;
+}
+.project-item a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  margin: 1rem;
+}
+.project-item a:hover{
+  border-bottom: 1px solid blueviolet;
+  color: blueviolet;
+}

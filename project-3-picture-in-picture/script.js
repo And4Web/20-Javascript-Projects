@@ -4,19 +4,19 @@ let buttonElement = document.getElementById("button");
 async function selectMediaStream() {
   try {
     const mediaStream = await navigator.mediaDevices.getDisplayMedia();
-    videoElement.srcObject = mediaStream;
+    videoElement.srcObject = mediaStream;   
     videoElement.onloadedmetadata = () => {
       videoElement.play();
-    };
+    };   
   } catch (error) {
     console.log("Error here: ", error);
   }
 }
 
 buttonElement.addEventListener("click", async () => {
-  buttonElement.disabled = true;
+  buttonElement.disabled = true;  
   await videoElement.requestPictureInPicture();
-  buttonElement.disabled = false;
+  buttonElement.disabled = false;  
 });
 
 selectMediaStream();
