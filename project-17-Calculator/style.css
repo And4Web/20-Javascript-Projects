@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Sen, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.calculator{
+  background: white;
+  width: 25rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 30px -5px rgba(0,0,0,0.6);
+}
+
+.calculator-display{
+  padding: 1rem 0;  
+  background: black;
+  color: white;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 10px 10px 0 0;
+  
+}
+.calculator-display h1{
+  margin: 0;
+  padding: 1.5rem;
+  font-size: 3rem;
+  font-family: 'Lucida Console', sans-serif;
+  font-weight: 100;
+  overflow-x: auto;
+}
+
+/* Custom Scrollbar */
+/* Width */
+::-webkit-scrollbar{
+  width: 2px;
+  height: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track{
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb{
+  background: #888;
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover{
+  background: #555;
+}
+
+/* Buttons */
+.calculator-buttons{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+button{
+  min-height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 100;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: rgb(205, 204, 204);
+  box-shadow: 0 1px 1px rgb(169, 169, 169);
+}
+
+button:hover{
+  filter: brightness(110%);
+}
+
+button:active{
+  transform: translateY(1px);
+  box-shadow: none;
+}
+button:focus{
+  outline: none;
+}
+
+.operator{
+  background: gray;
+  color: white;
+  font-size: 1.8rem;
+}
+.clear{
+  background: rgb(235, 41, 41);
+  color: white;
+  font-size: 1.8rem;
+}
+.equal-sign{
+  grid-column: -2;
+  grid-row: 2 / span 4;
+  background: rgb(13, 210, 13);
+}
+
+
+/* Media Queries */
+
+/* Large Smarphones - Vertical Orientation */
+@media screen and (max-width: 600px){
+  .calculator{
+    width: 95%;
+  }
+}

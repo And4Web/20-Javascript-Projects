@@ -163,6 +163,8 @@ function hideInputBox(column){
 // Allow arrays to reflect drag and drop items
 function rebuildArrays(){
   backlogListArray = [];
+  // backlogListArray = Array.from(backlogListArray.map(item => backlogList.children[].textContent));
+
   for(let i = 0; i < backlogList.children.length; i++){
     backlogListArray.push(backlogList.children[i].textContent);
   }

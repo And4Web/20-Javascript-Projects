@@ -1,16 +1,37 @@
+body{
+  margin: 10px auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  border: 1px solid red;
+  box-shadow: 0 10px 30px 5px rgb(240, 240, 121), inset 1px 1px 2px orange, inset -1px -1px 2px gold;
+  border-radius: 5px;
+  height: auto;
+  width: auto;
+  max-width: 95%;
+}
+body>h1{
+  text-align: center;
+  text-decoration: underline;
+}
 .project-menu{
   list-style-type: decimal;
 }
 .project-item{
   padding: .3rem;
+  margin: 5px 0;
 }
 .project-item a{
   text-decoration: none;
   color: black;
   font-size: 1.1rem;
   margin: 1rem;
+  padding: 10px;
+  border-radius: 5px;
 }
+
 .project-item a:hover{
-  border-bottom: 1px solid blueviolet;
   color: blueviolet;
+  box-shadow: 1px 1px 8px blueviolet;
+  background-color: white; 
 }
