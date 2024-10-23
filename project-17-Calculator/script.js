@@ -70,7 +70,7 @@ function resetAll(){
 }
 
 // Add Event listeners for numbers, operators, decimal buttons
-inputBtns.forEach((inputBtn, index)=>{
+inputBtns.forEach((inputBtn)=>{
   if(inputBtn.classList.length === 0){
     inputBtn.addEventListener('click', () => sendNumberValue(inputBtn.value));
   }else if(inputBtn.classList.contains('operator')){
