@@ -1,0 +1,24 @@
+1. HTML Range sliders - https://www.w3schools.com/howto/howto_js_rangeslider.asp
+
+2. html canvas - https://www.w3schools.com/html/html5_canvas.asp
+
+3. Canvas API - https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
+
+4. Window innerWidth and innerHeight 
+  - https://www.w3schools.com/jsref/prop_win_innerwidth.asp
+  - https://www.w3schools.com/jsref/prop_win_innerheight.asp
+
+5. Drawing shapes with canvas - https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes
+
+6. Mouse events - https://www.w3schools.com/jsref/obj_mouseevent.asp
+
+7. CanvasRenderingContext2D - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D
+
+8. HTMLCanvasElement: toDataURL() - https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL
+
+9. HTML a element download - https://www.w3schools.com/tags/att_a_download.asp
+
+10. Exetensibility - https://en.wikipedia.org/wiki/Extensibility
+    Extensibility is a software engineering and systems design principle that provides for future growth. Extensibility is a measure of the ability to extend a system and the level of effort required to implement the extension. Extensions can be through the addition of new functionality or through modification of existing functionality. The principle provides for enhancements without impairing existing system functions.
+
+11. 
