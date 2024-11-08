@@ -1,0 +1,11 @@
+1. Drawing shapes with canvas - https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes
+
+2. CanvasRenderingContext2D - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D
+
+3. Using requestAnimationFrame - https://css-tricks.com/using-requestanimationframe/
+
+4. Optimize javascript execution - https://web.dev/articles/optimize-javascript-execution
+
+5. requestAnimationFrame - https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame
+
+6. 
