@@ -35,3 +35,23 @@ body>h1{
   box-shadow: 1px 1px 8px blueviolet;
   background-color: white; 
 }
+.show-content{
+  display: flex;
+  justify-content: space-between;
+  /* position: relative; */
+}
+  .iframe-element{
+    border-radius: 5px;
+    
+  }
+.right-content{
+  /* border: 1px solid black; */
+  box-shadow: 2px 2px 5px grey;
+  border-radius: 5px;
+  width: 70%;
+  height: 75vh;
+  position: fixed;
+  top: 20%;
+  right: 2.5rem;
+  
+}

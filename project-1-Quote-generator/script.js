@@ -22,24 +22,37 @@ async function getQuote() {
   // const proxyUrl = "https://cors-anywhere.herokuapp.com/";
   // const apiUrl =
   // "http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json";
-  const apiUrl = "https://type.fit/api/quotes";
+  // const apiUrl = "https://type.fit/api/quotes";
+  const apiUrl_2 = "https://api.api-ninjas.com/v1/quotes";
   try {
-    const response = await fetch(apiUrl);
+    // const response = await fetch(apiUrl);
+    const response = await fetch(apiUrl_2, {
+      headers: {
+        "X-Api-Key": "ctiQDYJTqzeD6X7IwGxoCQ==CYGktCfnqshJNsbL"
+      }
+  })
     const data = await response.json();
-    //console.log('data >>> ', data)
-    let randomIndex = Math.floor(Math.random() * 1600);
-    quoteText.innerText = data[randomIndex].text;
+    // console.log('data >>> ', data)
+    // let randomIndex = Math.floor(Math.random() * 1600);
+    // quoteText.innerText = data[randomIndex].text;
+    quoteText.innerText = data[0].quote;
     // if author field is empty, add 'Anonymous':
-    if (data[randomIndex].author === null) {
-      quoteAuthor.innerText = "- " + "Anonymous";
-    } else {
-      quoteAuthor.innerText = "- " + data[randomIndex].author;
-    }
+    // if (data[randomIndex].author === null) {
+    //   quoteAuthor.innerText = "- " + "Anonymous";
+    // } else {
+    //   quoteAuthor.innerText = "- " + data[randomIndex].author;
+    // }
+    quoteAuthor.innerText = "- " + data[0].author;
     // if quote length is larger reduce the font size:
-    if (data[randomIndex].text.length > 100) {
+    // if (data[randomIndex].text.length > 100) {
+    //   quoteText.classList.add("long-quote");
+    // } else {
+    //   quoteText.classList.remove("long-quote");
+    // }
+    if(data[0].quote.length > 100){
       quoteText.classList.add("long-quote");
-    } else {
-      quoteText.classList.remove("long-quote");
+    }else{
+      quoteText.classList.remove("long-quote")
     }
     removeLoadingSpinner();
   } catch (error) {
